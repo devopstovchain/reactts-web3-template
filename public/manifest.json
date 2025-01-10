@@ -1,0 +1,20 @@
+{
+    "short_name": "Orchai-App",
+    "name": "Orchai App",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "190x190",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "appicon.png",
+            "type": "image/png",
+            "sizes": "2000x2000"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
