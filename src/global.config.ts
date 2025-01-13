@@ -1,9 +1,12 @@
 import BigNumberJS from 'bignumber.js';
+import { Address } from 'viem';
 import { ReactNode } from 'react';
 // import { Keplr, Window as KeplrWindow } from '@keplr-wallet/types';
 
 declare global {
-    interface Window {}
+    interface Window {
+        eth_owallet: any;
+    }
 
     interface ImportMetaEnv {
         readonly VITE_APP_ENV: 'dev' | 'product' | 'staging';
@@ -68,3 +71,5 @@ export type TStatusFetchData = 'init' | 'success' | 'failure' | 'updating' | 'fe
 export const Unknown = 'Unknown';
 
 export const Env = import.meta.env;
+
+export type HexAddress = Address;

@@ -10,6 +10,11 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@cosmos-kit/cosmos-extension-metamask": "^0.12.3",
+        "@cosmos-kit/keplr": "^2.14.3",
+        "@cosmos-kit/leap": "^2.14.3",
+        "@cosmos-kit/owallet": "^2.14.2",
+        "@cosmos-kit/react-lite": "^2.15.3",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.0",
         "@mui/icons-material": "^6.3.0",
@@ -19,7 +24,8 @@
         "axios": "^1.7.9",
         "bignumber.js": "^9.1.2",
         "buffer": "^6.0.3",
-        "crypto-token-icon": "^0.0.23",
+        "chain-registry": "^1.69.88",
+        "crypto-token-icon": "^0.0.26",
         "date-fns": "^4.1.0",
         "jotai": "^2.11.0",
         "react": "^18.3.1",

@@ -1,11 +1,11 @@
 import React from 'react';
-import { SummaryConnectInfo } from '../../types';
 import { TEvmNetworkId } from '../types';
-import { useAccount, useClient } from 'wagmi';
+import { useAccount } from 'wagmi';
 import { Chain } from 'viem';
 import { bsc, mainnet } from 'viem/chains';
-import { chainIcon } from 'src/constants/chainIcon';
-import { walletIcon } from 'src/constants/walletIcon';
+import { chainIcon } from '../../constants/chainIcon';
+import { walletIcon } from '../../constants/walletIcon';
+import { SummaryConnectInfo } from '../../types';
 
 const chainInfo: Record<TEvmNetworkId, Chain> = {
     1: mainnet,

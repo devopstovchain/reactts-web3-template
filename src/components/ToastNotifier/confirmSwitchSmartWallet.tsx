@@ -29,7 +29,7 @@ export function confirmSwitchSmartWallet(address: string, handleSwitchSmartWalle
         {
             position: 'top-center',
             autoClose: 10000,
-            bodyStyle: { placeItems: 'start' },
+            style: { placeItems: 'start' },
         }
     );
 }

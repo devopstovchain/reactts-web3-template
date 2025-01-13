@@ -1,17 +1,15 @@
 import { useAccount, useChainId, useSwitchChain } from 'wagmi';
-import { useActiveChainToViewValue } from '../../hooks';
+import { TEvmNetworkId } from '../types';
 
 export default function useSwitchToConnectedChain() {
-    const { chainId } = useAccount();
-    const chainIdConnected = useChainId();
-    const idActiveOnView = useActiveChainToViewValue();
+    const { chainId } = useAccount(); // chainId from wallet
+    const chainIdConnected = useChainId(); // chainId from provider
     const { switchChainAsync } = useSwitchChain();
 
-    async function switchToChainConnected() {
-        if (idActiveOnView == 1 || idActiveOnView == 56) {
-            if (chainId != chainIdConnected) {
-                await switchChainAsync({ chainId: chainIdConnected });
-            }
+    async function switchToChainConnected(idSwitchTo?: TEvmNetworkId) {
+        const idTarget = idSwitchTo || chainIdConnected;
+        if (chainId !== idTarget) {
+            await switchChainAsync({ chainId: idTarget });
         }
     }
 
