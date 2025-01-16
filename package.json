@@ -19,6 +19,7 @@
         "@emotion/styled": "^11.14.0",
         "@mui/icons-material": "^6.3.0",
         "@mui/material": "^6.3.0",
+        "@solana/wallet-adapter-base": "^0.9.23",
         "@tanstack/react-query": "^5.62.11",
         "@tanstack/react-query-devtools": "^5.62.11",
         "axios": "^1.7.9",
