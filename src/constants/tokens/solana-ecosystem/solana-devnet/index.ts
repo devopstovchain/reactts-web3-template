@@ -7,4 +7,5 @@ export const usdcDevSolanaDevnet = new SolanaDevnetTokenInfo({
     symbol: TokenName.USDC,
     prettyName: 'USDC Dev',
     isNative: false,
+    isToken2022: false,
 });
