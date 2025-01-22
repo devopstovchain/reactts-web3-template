@@ -1,8 +1,8 @@
 import { TokenName } from 'crypto-token-icon';
-import { CosmosTokenInfo } from '../../CosmosTokenInfo';
+import { CosmosAssetInfo, CosmosTokenInfo } from '../../CosmosTokenInfo';
 
 export class OraichainTokenInfo extends CosmosTokenInfo {
-    constructor(input: { prettyName: string; symbol: TokenName; decimals: number; assetInfo: { native_token: { denom: string } }; isNative: boolean; coingeckoId: string }) {
+    constructor(input: { prettyName: string; symbol: TokenName; decimals: number; assetInfo: CosmosAssetInfo; isNative: boolean; coingeckoId: string }) {
         super({
             prettyName: input.prettyName,
             symbol: input.symbol,
