@@ -101,5 +101,5 @@ yarn add tronweb @tronweb3/tronwallet-adapter-react-hooks @tronweb3/tronwallet-a
 ### Solana ecosystem
 
 ```bash
-yarn add @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-wallets @solana/web3.js
+yarn add @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-wallets @solana/web3.js @solana/spl-token
 ```
