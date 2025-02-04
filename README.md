@@ -5,7 +5,7 @@ yarn add @types/node --dev
 ```
 
 ```bash
-yarn add @emotion/react @emotion/styled @eslint/js @mui/icons-material @mui/material @tanstack/react-query-devtools @tanstack/react-query axios bignumber.js buffer crypto-token-icon date-fns jotai react-router-dom react-toastify uuid viem wagmi
+yarn add @emotion/react @emotion/styled @eslint/js @mui/icons-material @mui/material @tanstack/react-query-devtools @tanstack/react-query axios bignumber.js buffer crypto-token-icon date-fns jotai react-router-dom react-toastify uuid
 ```
 
 ## 1. Public folder
