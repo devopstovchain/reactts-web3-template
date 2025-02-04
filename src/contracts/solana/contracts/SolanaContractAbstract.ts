@@ -1,7 +1,6 @@
 import { AnchorProvider, Idl, Program } from '@project-serum/anchor';
 import { Wallet } from '@project-serum/anchor/dist/cjs/provider';
-import { confirmTransaction } from '@raydium-io/raydium-sdk-v2';
-import { ComputeBudgetProgram, PublicKey, sendAndConfirmTransaction, Transaction } from '@solana/web3.js';
+import { ComputeBudgetProgram, PublicKey, Transaction } from '@solana/web3.js';
 import { publicClientSol } from 'src/states/wallets/solana-blockchain/configs';
 
 export abstract class SolanaContractAbstract<IDL extends Idl> {
@@ -23,7 +22,6 @@ export abstract class SolanaContractAbstract<IDL extends Idl> {
     async sendTransaction(instruction: Transaction, signers: any[] = []) {
         const transaction = new Transaction().add(instruction);
         const signature = await this.provider.sendAndConfirm(transaction, signers, { maxRetries: 1000 * 60 });
-        const result = await confirmTransaction(publicClientSol, signature);
-        return { signature, result };
+        return signature;
     }
 }
